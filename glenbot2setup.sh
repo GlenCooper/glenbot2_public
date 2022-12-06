@@ -31,7 +31,7 @@ else
   echo "Done"
 fi
 
-glenbot2filename = "~/.aliases_glenbot2"
+glenbot2filename="~/.aliases_glenbot2"
 if [ -f $glenbot2fiename ]
 then
   echo "20221206T113729Z: ERROR!  Filename \"glenbot2filename\" already exists!"
