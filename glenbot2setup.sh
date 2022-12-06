@@ -14,7 +14,7 @@ reset=`tput sgr0`
 #echo "${red}red text ${green}green text${reset}"
 
 # to see if GlenBot2 is installed, check for a line about ~/.glenbot2_aliases
-if grep -Pq "if \[ -f ~/.glenbot2_aliases \]; then" ~/.bashrc
+if grep -Pq "if \[ -f ~/.aliases_glenbot2 \]; then" ~/.bashrc
 then
   tput setaf 2 # set output to green
   /usr/bin/printf "\xE2\x9C\x94" # print a checkmark
