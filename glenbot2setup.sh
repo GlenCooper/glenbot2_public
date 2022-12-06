@@ -34,7 +34,7 @@ fi
 glenbot2filename="~/.aliases_glenbot2"
 if [ -f $glenbot2filename ]
 then
-  echo "20221206T113729Z: ERROR!  Filename \"glenbot2filename\" already exists!"
+  echo "20221206T113729Z: ERROR!  Filename \"$glenbot2filename\" already exists!"
 else
   echo "alias c='clear'" >> $glenbot2filename
 fi
