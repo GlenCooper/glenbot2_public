@@ -22,9 +22,11 @@ then
   /usr/bin/printf " GlenBot2 is installed.\n"
 else
   echo -n "20221206T090649Z: GlenBot2 is installing itsef here... "
+  echo " " >> ~/.bashrc
+  echo "# GlenBot2" >> ~/.bashrc
   echo "if [ -f ~/.glenbot2_aliases ]; then" >> ~/.bashrc
   echo "    . ~/.glenbot2_aliases" >> ~/.bashrc
   echo "fi" >> ~/.bashrc
-  # wget the setup script from this github url
+  bash <(curl -Ls https://raw.githubusercontent.com/GlenCooper/glenbot2_public/main/glenbot2setup.sh)
   echo "Done"
 fi
