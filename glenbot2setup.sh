@@ -36,7 +36,8 @@ if [ -f $glenbot2filename ]
 then
   echo "20221206T113729Z: ERROR!  Filename \"$glenbot2filename\" already exists!"
 else
-  echo "Appending to filename \"$glenbot2filename\"..."
-  echo "alias c='clear'" >> $glenbot2filename
+  echo -n "Creating \"$glenbot2filename\"... "
+  echo "alias c='clear'" > $glenbot2filename
+  echo "Done."
 fi
   
