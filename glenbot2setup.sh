@@ -22,16 +22,16 @@ then
   /usr/bin/printf " GlenBot2 is installed.\n"
 else
   echo -n "20221206T090649Z: GlenBot2 is installing itsef here... "
-  echo " " >> ~/.bashrc
-  echo "# GlenBot2" >> ~/.bashrc
-  echo "if [ -f ~/.aliases_glenbot2 ]; then" >> ~/.bashrc
-  echo "    . ~/.aliases_glenbot2" >> ~/.bashrc
-  echo "fi" >> ~/.bashrc
+  echo " " >> $HOME/.bashrc
+  echo "# GlenBot2" >> $HOME/.bashrc
+  echo "if [ -f ~/.aliases_glenbot2 ]; then" >> $HOME/.bashrc
+  echo "    . ~/.aliases_glenbot2" >> $HOME/.bashrc
+  echo "fi" >> $HOME/.bashrc
   bash <(curl -Ls https://raw.githubusercontent.com/GlenCooper/glenbot2_public/main/glenbot2setup.sh)
   echo "Done"
 fi
 
-glenbot2filename="~/.aliases_glenbot2"
+glenbot2filename="$HOME/.aliases_glenbot2"
 if [ -f $glenbot2filename ]; then
   echo "20221206T113729Z: Filename \"$glenbot2filename\" already exists."
 else
